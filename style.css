@@ -1,0 +1,138 @@
+/* Reset and Responsive Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .user-name {
+    color: rgb(229, 26, 26); /* Example color */
+    font-weight: bold;
+    font-size: 1.2em;
+  }  
+  body, html {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #1c1c2b, #141427);
+    color: #ffffff;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 90%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #ffd700;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    text-shadow: 0 0 5px #ffdd73, 0 0 15px #ffd700;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #ffdd73;
+  }
+  
+  .quote {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #ffe5b4;
+    margin-top: 20px;
+  }
+  
+  .author {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ffd700;
+  }
+  
+  #celebrateButton {
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #e94560;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #celebrateButton:hover {
+    background-color: #ff5866;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 88, 102, 0.3);
+  }
+  
+  #celebrateButton:active {
+    animation: buttonPulse 1s ease-in-out infinite;
+  }
+  
+  /* Button Pulse Animation */
+  @keyframes buttonPulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 5px #ffdd73, 0 0 15px #ffdd73;
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700;
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 5px #ffdd73, 0 0 15px #ffdd73;
+    }
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+    }
+    100% {
+      text-shadow: 0 0 20px #ffdd73, 0 0 30px #ffd700, 0 0 40px #ffd700;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    p, .quote {
+      font-size: 1.2rem;
+    }
+    button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  #fireworksCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+  }  
