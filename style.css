@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("https://fxcave.com/wp-content/uploads/2021/08/Thumnail.gif") no-repeat center center fixed; /* Added no-repeat and fixed */
+  background: url("https://img.freepik.com/premium-photo/happy-diwali-clay-diya-lamps-are-lit-hindu-diwali_1008415-106534.jpg?semt=ais_hybrid") no-repeat center center fixed; /* Added no-repeat and fixed */
   background-size: cover; /* Ensures the image covers the entire area */
   color: #ffffff;
 }
